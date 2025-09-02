@@ -1,4 +1,4 @@
-import './TaskItem.scss'
+import "./TaskItem.scss";
 
 import { AiFillDelete } from "react-icons/ai";
 
@@ -14,10 +14,7 @@ const TaskItem = ({ task }) => {
                     }
                 >
                     {task.description}
-                    <input
-                        type="checkbox"
-                        defaultChecked={task.isCompleted}
-                    />
+                    <input type="checkbox" defaultChecked={task.isCompleted} />
                     <span
                         className={
                             task.isCompleted
@@ -29,7 +26,7 @@ const TaskItem = ({ task }) => {
             </div>
 
             <div className="delete">
-                <AiFillDelete size={20} color="#f97474" />
+                <AiFillDelete size={18} color="#F97474" />
             </div>
         </div>
     );
