@@ -7,7 +7,7 @@ import CustomButton from "./CustomButton";
 
 import "./AddTask.scss";
 
-const AddTask = ({fetchTasks}) => {
+const AddTask = ({ fetchTasks }) => {
     const [task, setTask] = useState("");
 
     const onChange = (e) => {
@@ -41,6 +41,7 @@ const AddTask = ({fetchTasks}) => {
                 label="Adicionar tarefa..."
                 value={task}
                 onChange={onChange}
+                onEnterPress={handleTaskAdd}
             />
             <CustomButton onClick={handleTaskAdd}>
                 <FaPlus size={14} color="#fff" />
