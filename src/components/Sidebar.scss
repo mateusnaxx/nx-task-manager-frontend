@@ -1,0 +1,35 @@
+.sidebar-container {
+    max-width: 181px;
+    height: 100vh;
+    background: #111;
+    padding: 56px 28px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+
+    .signout {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: black;
+    }
+
+    .logo {
+        width: 140px;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+    }
+}
