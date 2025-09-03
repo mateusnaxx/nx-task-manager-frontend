@@ -3,10 +3,11 @@ import axios from "axios";
 
 import "./TaskItem.scss";
 
-const TaskItem = ({ task }) => {
+const TaskItem = ({ task, fetchTasks }) => {
     const handleTaskDeletion = async () => {
         try {
             await axios.delete(`http://localhost:8000/tasks/${task._id}`);
+            await fetchTasks();
         } catch (error) {
             alert("Error deleting task:", error);
         }
