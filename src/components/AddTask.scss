@@ -3,7 +3,11 @@
     align-items: center;
 
     div:first-child {
-        width: 100%;
+        width: 90%;
+    }
+
+    .custom-input-container {
+        max-width: 75%;
     }
 
     .custom-button-container {
